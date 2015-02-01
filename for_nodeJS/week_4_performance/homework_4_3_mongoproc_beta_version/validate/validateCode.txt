@@ -1,0 +1,16 @@
+xiaoyazi:validate xiaoyazi$ node hw4-3_validate.js 
+Welcome to the HW 4.3 Checker. My job is to make sure you added the indexes
+that make the blog fast in the following three situations
+	When showing the home page
+	When fetching a particular post
+	When showing all posts for a particular tag
+Data looks like it is properly loaded into the posts collection
+Home page is super fast. Nice job.
+
+Blog retrieval by permalink is super fast. Nice job.
+
+Blog retrieval by tag is super fast. Nice job.
+
+hw4-3 Validated successfully!
+Your validation code is: dOiP6E1JDOYwDKWP0uN3
+
