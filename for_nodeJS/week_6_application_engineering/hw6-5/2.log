@@ -1,0 +1,195 @@
+2015-02-16T05:57:56.092-0800 [initandlisten] MongoDB starting : pid=26966 port=27018 dbpath=/data/rs2 64-bit host=xiaoyazi.home
+2015-02-16T05:57:56.093-0800 [initandlisten] db version v2.6.4
+2015-02-16T05:57:56.093-0800 [initandlisten] git version: 3a830be0eb92d772aa855ebb711ac91d658ee910
+2015-02-16T05:57:56.093-0800 [initandlisten] build info: Darwin bs-osx108-4 12.5.0 Darwin Kernel Version 12.5.0: Sun Sep 29 13:33:47 PDT 2013; root:xnu-2050.48.12~1/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+2015-02-16T05:57:56.093-0800 [initandlisten] allocator: system
+2015-02-16T05:57:56.094-0800 [initandlisten] options: { net: { port: 27018 }, processManagement: { fork: true }, replication: { oplogSizeMB: 64, replSet: "m101" }, storage: { dbPath: "/data/rs2", smallFiles: true }, systemLog: { destination: "file", path: "2.log" } }
+2015-02-16T05:57:56.106-0800 [initandlisten] journal dir=/data/rs2/journal
+2015-02-16T05:57:56.107-0800 [initandlisten] recover begin
+2015-02-16T05:57:56.107-0800 [initandlisten] recover lsn: 550167
+2015-02-16T05:57:56.107-0800 [initandlisten] recover /data/rs2/journal/j._0
+2015-02-16T05:57:56.108-0800 [initandlisten] recover skipping application of section seq:0 < lsn:550167
+2015-02-16T05:57:56.108-0800 [initandlisten] recover skipping application of section seq:406683 < lsn:550167
+2015-02-16T05:57:56.109-0800 [initandlisten] recover create file /data/rs2/test.ns 16MB
+2015-02-16T05:57:56.288-0800 [initandlisten] recover create file /data/rs2/test.0 16MB
+2015-02-16T05:57:56.474-0800 [initandlisten] recover cleaning up
+2015-02-16T05:57:56.475-0800 [initandlisten] removeJournalFiles
+2015-02-16T05:57:56.475-0800 [initandlisten] recover done
+2015-02-16T05:57:56.633-0800 [initandlisten] waiting for connections on port 27018
+2015-02-16T05:57:56.634-0800 [initandlisten] connection accepted from 127.0.0.1:56439 #1 (1 connection now open)
+2015-02-16T05:57:56.653-0800 [rsStart] trying to contact localhost:27017
+2015-02-16T05:57:56.656-0800 [rsStart] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:57:56.656-0800 [rsStart] replSet I am localhost:27018
+2015-02-16T05:57:56.657-0800 [rsStart] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:57:56.657-0800 [rsStart] replSet STARTUP2
+2015-02-16T05:57:56.658-0800 [rsSync] replSet SECONDARY
+2015-02-16T05:57:58.646-0800 [conn1] end connection 127.0.0.1:56439 (0 connections now open)
+2015-02-16T05:57:58.646-0800 [initandlisten] connection accepted from 127.0.0.1:56446 #2 (2 connections now open)
+2015-02-16T05:57:58.658-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:57:58.659-0800 [rsHealthPoll] replSet member localhost:27017 is up
+2015-02-16T05:57:58.659-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1), connection attempt failed
+2015-02-16T05:57:58.660-0800 [rsHealthPoll] replSet member localhost:27017 is now in state SECONDARY
+2015-02-16T05:57:58.661-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:57:58.662-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:57:58.664-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:57:58.664-0800 [rsHealthPoll] replset info localhost:27019 heartbeat failed, retrying
+2015-02-16T05:57:58.665-0800 [MultiCommandJob] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:57:58.665-0800 [MultiCommandJob] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:57:58.669-0800 [MultiCommandJob] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:57:58.674-0800 [rsMgr] not electing self, localhost:27017 would veto with 'I don't think localhost:27018 is electable'
+2015-02-16T05:57:58.675-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:57:58.676-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:57:58.677-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:57:58.678-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:57:58.683-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:57:58.684-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:57:58.685-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:57:58.685-0800 [rsHealthPoll] replSet info localhost:27019 is down (or slow to respond): 
+2015-02-16T05:57:58.686-0800 [rsHealthPoll] replSet member localhost:27019 is now in state DOWN
+2015-02-16T05:57:58.687-0800 [rsMgr] not electing self, localhost:27017 would veto with 'I don't think localhost:27018 is electable'
+2015-02-16T05:58:00.690-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:00.691-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:58:00.692-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:00.692-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:58:00.703-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:00.704-0800 [rsHealthPoll] replset info localhost:27019 heartbeat failed, retrying
+2015-02-16T05:58:00.705-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:00.705-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:58:00.706-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:00.706-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:58:00.724-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:00.725-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:00.725-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:58:02.659-0800 [conn2] end connection 127.0.0.1:56446 (0 connections now open)
+2015-02-16T05:58:02.660-0800 [initandlisten] connection accepted from 127.0.0.1:56470 #3 (2 connections now open)
+2015-02-16T05:58:02.727-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:02.728-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:58:02.729-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:02.730-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:58:02.766-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:02.767-0800 [rsHealthPoll] replset info localhost:27019 heartbeat failed, retrying
+2015-02-16T05:58:02.768-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:02.768-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:58:02.769-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:02.769-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:58:02.837-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:02.838-0800 [rsHealthPoll] warning: Failed to connect to 127.0.0.1:27019, reason: errno:61 Connection refused
+2015-02-16T05:58:02.839-0800 [rsHealthPoll] couldn't connect to localhost:27019: couldn't connect to server localhost:27019 (127.0.0.1) failed, connection attempt failed
+2015-02-16T05:58:03.817-0800 [initandlisten] connection accepted from 127.0.0.1:56486 #4 (2 connections now open)
+2015-02-16T05:58:03.825-0800 [conn4] end connection 127.0.0.1:56486 (1 connection now open)
+2015-02-16T05:58:04.874-0800 [rsMgr] replSet info electSelf 1
+2015-02-16T05:58:04.975-0800 [rsHealthPoll] replset info localhost:27019 thinks that we are down
+2015-02-16T05:58:04.975-0800 [rsHealthPoll] replSet member localhost:27019 is up
+2015-02-16T05:58:04.975-0800 [rsHealthPoll] replSet member localhost:27019 is now in state SECONDARY
+2015-02-16T05:58:05.678-0800 [rsMgr] replSet PRIMARY
+2015-02-16T05:58:05.829-0800 [initandlisten] connection accepted from 127.0.0.1:56491 #5 (2 connections now open)
+2015-02-16T05:58:07.032-0800 [initandlisten] connection accepted from 127.0.0.1:56493 #6 (3 connections now open)
+2015-02-16T05:58:07.034-0800 [initandlisten] connection accepted from 127.0.0.1:56494 #7 (4 connections now open)
+2015-02-16T05:58:11.854-0800 [initandlisten] connection accepted from 127.0.0.1:56495 #8 (5 connections now open)
+2015-02-16T05:58:11.857-0800 [initandlisten] connection accepted from 127.0.0.1:56496 #9 (6 connections now open)
+2015-02-16T05:58:32.724-0800 [conn3] end connection 127.0.0.1:56470 (5 connections now open)
+2015-02-16T05:58:32.725-0800 [initandlisten] connection accepted from 127.0.0.1:56503 #10 (6 connections now open)
+2015-02-16T05:58:33.896-0800 [conn5] end connection 127.0.0.1:56491 (5 connections now open)
+2015-02-16T05:58:33.897-0800 [initandlisten] connection accepted from 127.0.0.1:56504 #11 (7 connections now open)
+2015-02-16T05:58:40.337-0800 [initandlisten] connection accepted from 127.0.0.1:56505 #12 (7 connections now open)
+2015-02-16T05:58:45.606-0800 [conn12] end connection 127.0.0.1:56505 (6 connections now open)
+2015-02-16T05:58:56.591-0800 [clientcursormon] mem (MB) res:25 virt:2887
+2015-02-16T05:58:56.591-0800 [clientcursormon]  mapped (incl journal view):384
+2015-02-16T05:58:56.592-0800 [clientcursormon]  connections:6
+2015-02-16T05:58:56.592-0800 [clientcursormon]  replication threads:32
+2015-02-16T05:59:02.789-0800 [conn10] end connection 127.0.0.1:56503 (5 connections now open)
+2015-02-16T05:59:02.790-0800 [initandlisten] connection accepted from 127.0.0.1:56512 #13 (6 connections now open)
+2015-02-16T05:59:03.959-0800 [conn11] end connection 127.0.0.1:56504 (5 connections now open)
+2015-02-16T05:59:03.959-0800 [initandlisten] connection accepted from 127.0.0.1:56513 #14 (7 connections now open)
+2015-02-16T05:59:32.856-0800 [conn13] end connection 127.0.0.1:56512 (5 connections now open)
+2015-02-16T05:59:32.857-0800 [initandlisten] connection accepted from 127.0.0.1:56519 #15 (6 connections now open)
+2015-02-16T05:59:34.013-0800 [conn14] end connection 127.0.0.1:56513 (5 connections now open)
+2015-02-16T05:59:34.013-0800 [initandlisten] connection accepted from 127.0.0.1:56520 #16 (7 connections now open)
+2015-02-16T06:00:02.916-0800 [conn15] end connection 127.0.0.1:56519 (5 connections now open)
+2015-02-16T06:00:02.917-0800 [initandlisten] connection accepted from 127.0.0.1:56525 #17 (6 connections now open)
+2015-02-16T06:00:04.074-0800 [conn16] end connection 127.0.0.1:56520 (5 connections now open)
+2015-02-16T06:00:04.075-0800 [initandlisten] connection accepted from 127.0.0.1:56526 #18 (6 connections now open)
+2015-02-16T06:00:32.967-0800 [conn17] end connection 127.0.0.1:56525 (5 connections now open)
+2015-02-16T06:00:32.968-0800 [initandlisten] connection accepted from 127.0.0.1:56537 #19 (6 connections now open)
+2015-02-16T06:00:34.149-0800 [conn18] end connection 127.0.0.1:56526 (5 connections now open)
+2015-02-16T06:00:34.149-0800 [initandlisten] connection accepted from 127.0.0.1:56540 #20 (7 connections now open)
+2015-02-16T06:00:38.102-0800 [initandlisten] connection accepted from 127.0.0.1:56547 #21 (7 connections now open)
+2015-02-16T06:00:38.103-0800 [initandlisten] connection accepted from 127.0.0.1:56548 #22 (8 connections now open)
+2015-02-16T06:00:38.105-0800 [initandlisten] connection accepted from 127.0.0.1:56549 #23 (9 connections now open)
+2015-02-16T06:00:38.106-0800 [initandlisten] connection accepted from 127.0.0.1:56550 #24 (10 connections now open)
+2015-02-16T06:00:38.107-0800 [initandlisten] connection accepted from 127.0.0.1:56551 #25 (11 connections now open)
+2015-02-16T06:00:38.131-0800 [initandlisten] connection accepted from 127.0.0.1:56558 #26 (12 connections now open)
+2015-02-16T06:00:38.144-0800 [conn21] end connection 127.0.0.1:56547 (11 connections now open)
+2015-02-16T06:00:38.144-0800 [conn22] end connection 127.0.0.1:56548 (10 connections now open)
+2015-02-16T06:00:38.145-0800 [conn23] end connection 127.0.0.1:56549 (9 connections now open)
+2015-02-16T06:00:38.145-0800 [conn24] end connection 127.0.0.1:56550 (8 connections now open)
+2015-02-16T06:00:38.146-0800 [conn25] end connection 127.0.0.1:56551 (7 connections now open)
+2015-02-16T06:00:38.151-0800 [conn26] end connection 127.0.0.1:56558 (6 connections now open)
+2015-02-16T06:01:03.028-0800 [conn19] end connection 127.0.0.1:56537 (5 connections now open)
+2015-02-16T06:01:03.031-0800 [initandlisten] connection accepted from 127.0.0.1:56567 #27 (6 connections now open)
+2015-02-16T06:01:04.212-0800 [conn20] end connection 127.0.0.1:56540 (5 connections now open)
+2015-02-16T06:01:04.212-0800 [initandlisten] connection accepted from 127.0.0.1:56568 #28 (7 connections now open)
+2015-02-16T06:01:33.092-0800 [conn27] end connection 127.0.0.1:56567 (5 connections now open)
+2015-02-16T06:01:33.093-0800 [initandlisten] connection accepted from 127.0.0.1:56588 #29 (6 connections now open)
+2015-02-16T06:01:34.268-0800 [conn28] end connection 127.0.0.1:56568 (5 connections now open)
+2015-02-16T06:01:34.270-0800 [initandlisten] connection accepted from 127.0.0.1:56589 #30 (6 connections now open)
+2015-02-16T06:02:03.147-0800 [conn29] end connection 127.0.0.1:56588 (5 connections now open)
+2015-02-16T06:02:03.148-0800 [initandlisten] connection accepted from 127.0.0.1:56602 #31 (6 connections now open)
+2015-02-16T06:02:04.325-0800 [conn30] end connection 127.0.0.1:56589 (5 connections now open)
+2015-02-16T06:02:04.326-0800 [initandlisten] connection accepted from 127.0.0.1:56603 #32 (6 connections now open)
+2015-02-16T06:02:33.207-0800 [conn31] end connection 127.0.0.1:56602 (5 connections now open)
+2015-02-16T06:02:33.208-0800 [initandlisten] connection accepted from 127.0.0.1:56614 #33 (6 connections now open)
+2015-02-16T06:02:34.377-0800 [conn32] end connection 127.0.0.1:56603 (5 connections now open)
+2015-02-16T06:02:34.378-0800 [initandlisten] connection accepted from 127.0.0.1:56615 #34 (6 connections now open)
+2015-02-16T06:03:03.265-0800 [conn33] end connection 127.0.0.1:56614 (5 connections now open)
+2015-02-16T06:03:03.266-0800 [initandlisten] connection accepted from 127.0.0.1:56623 #35 (6 connections now open)
+2015-02-16T06:03:04.424-0800 [conn34] end connection 127.0.0.1:56615 (5 connections now open)
+2015-02-16T06:03:04.425-0800 [initandlisten] connection accepted from 127.0.0.1:56624 #36 (6 connections now open)
+2015-02-16T06:03:33.323-0800 [conn35] end connection 127.0.0.1:56623 (5 connections now open)
+2015-02-16T06:03:33.324-0800 [initandlisten] connection accepted from 127.0.0.1:56640 #37 (6 connections now open)
+2015-02-16T06:03:34.483-0800 [conn36] end connection 127.0.0.1:56624 (5 connections now open)
+2015-02-16T06:03:34.484-0800 [initandlisten] connection accepted from 127.0.0.1:56641 #38 (7 connections now open)
+2015-02-16T06:03:56.832-0800 [clientcursormon] mem (MB) res:25 virt:2887
+2015-02-16T06:03:56.833-0800 [clientcursormon]  mapped (incl journal view):384
+2015-02-16T06:03:56.833-0800 [clientcursormon]  connections:6
+2015-02-16T06:03:56.834-0800 [clientcursormon]  replication threads:32
+2015-02-16T06:04:03.385-0800 [conn37] end connection 127.0.0.1:56640 (5 connections now open)
+2015-02-16T06:04:03.386-0800 [initandlisten] connection accepted from 127.0.0.1:56652 #39 (6 connections now open)
+2015-02-16T06:04:04.545-0800 [conn38] end connection 127.0.0.1:56641 (5 connections now open)
+2015-02-16T06:04:04.546-0800 [initandlisten] connection accepted from 127.0.0.1:56653 #40 (6 connections now open)
+2015-02-16T06:04:33.449-0800 [conn39] end connection 127.0.0.1:56652 (5 connections now open)
+2015-02-16T06:04:33.449-0800 [initandlisten] connection accepted from 127.0.0.1:56738 #41 (7 connections now open)
+2015-02-16T06:04:34.593-0800 [conn40] end connection 127.0.0.1:56653 (5 connections now open)
+2015-02-16T06:04:34.595-0800 [initandlisten] connection accepted from 127.0.0.1:56739 #42 (6 connections now open)
+2015-02-16T06:04:49.948-0800 [initandlisten] connection accepted from 127.0.0.1:56754 #43 (7 connections now open)
+2015-02-16T06:04:49.971-0800 [conn43] end connection 127.0.0.1:56754 (6 connections now open)
+2015-02-16T06:04:57.265-0800 [initandlisten] connection accepted from 127.0.0.1:56759 #44 (7 connections now open)
+2015-02-16T06:04:57.283-0800 [conn44] end connection 127.0.0.1:56759 (6 connections now open)
+2015-02-16T06:05:03.498-0800 [conn41] end connection 127.0.0.1:56738 (5 connections now open)
+2015-02-16T06:05:03.499-0800 [initandlisten] connection accepted from 127.0.0.1:56762 #45 (6 connections now open)
+2015-02-16T06:05:04.652-0800 [conn42] end connection 127.0.0.1:56739 (5 connections now open)
+2015-02-16T06:05:04.654-0800 [initandlisten] connection accepted from 127.0.0.1:56763 #46 (6 connections now open)
+2015-02-16T06:05:33.557-0800 [conn45] end connection 127.0.0.1:56762 (5 connections now open)
+2015-02-16T06:05:33.558-0800 [initandlisten] connection accepted from 127.0.0.1:56771 #47 (6 connections now open)
+2015-02-16T06:05:34.707-0800 [conn46] end connection 127.0.0.1:56763 (5 connections now open)
+2015-02-16T06:05:34.707-0800 [initandlisten] connection accepted from 127.0.0.1:56772 #48 (7 connections now open)
+2015-02-16T06:06:03.623-0800 [conn47] end connection 127.0.0.1:56771 (5 connections now open)
+2015-02-16T06:06:03.623-0800 [initandlisten] connection accepted from 127.0.0.1:56779 #49 (7 connections now open)
+2015-02-16T06:06:04.764-0800 [conn48] end connection 127.0.0.1:56772 (5 connections now open)
+2015-02-16T06:06:04.764-0800 [initandlisten] connection accepted from 127.0.0.1:56781 #50 (7 connections now open)
+2015-02-16T06:06:33.682-0800 [conn49] end connection 127.0.0.1:56779 (5 connections now open)
+2015-02-16T06:06:33.684-0800 [initandlisten] connection accepted from 127.0.0.1:56786 #51 (6 connections now open)
+2015-02-16T06:06:34.820-0800 [conn50] end connection 127.0.0.1:56781 (5 connections now open)
+2015-02-16T06:06:34.821-0800 [initandlisten] connection accepted from 127.0.0.1:56787 #52 (7 connections now open)
+2015-02-16T06:07:03.747-0800 [conn51] end connection 127.0.0.1:56786 (5 connections now open)
+2015-02-16T06:07:03.747-0800 [initandlisten] connection accepted from 127.0.0.1:56796 #53 (7 connections now open)
+2015-02-16T06:07:04.882-0800 [conn52] end connection 127.0.0.1:56787 (5 connections now open)
+2015-02-16T06:07:04.882-0800 [initandlisten] connection accepted from 127.0.0.1:56797 #54 (7 connections now open)
+2015-02-16T06:07:33.808-0800 [conn53] end connection 127.0.0.1:56796 (5 connections now open)
+2015-02-16T06:07:33.809-0800 [initandlisten] connection accepted from 127.0.0.1:56802 #55 (7 connections now open)
+2015-02-16T06:07:34.949-0800 [conn54] end connection 127.0.0.1:56797 (5 connections now open)
+2015-02-16T06:07:34.949-0800 [initandlisten] connection accepted from 127.0.0.1:56803 #56 (6 connections now open)
+2015-02-16T06:08:03.866-0800 [conn55] end connection 127.0.0.1:56802 (5 connections now open)
+2015-02-16T06:08:03.867-0800 [initandlisten] connection accepted from 127.0.0.1:56808 #57 (6 connections now open)
+2015-02-16T06:08:05.006-0800 [conn56] end connection 127.0.0.1:56803 (5 connections now open)
+2015-02-16T06:08:05.006-0800 [initandlisten] connection accepted from 127.0.0.1:56809 #58 (7 connections now open)
